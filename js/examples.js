@@ -1,28 +1,33 @@
 let examplesArray = [
     {
-        "name":"Retail Store",
+        "name":"Product 1",
         "image":"/images/examples/webnotfound.jpg",
         "link":"https://retail-example.netlify.app/",
+        "price":"$499.99",
     },
     {
-        "name":"Restaurant",
+        "name":"Product 2",
         "image":"/images/examples/webnotfound.jpg",
         "link":"/html/examples/restaurant.html",
+        "price":"$499.99",
     },
     {
-        "name":"Mechanic Shop",
+        "name":"Product 3",
         "image":"/images/examples/webnotfound.jpg",
         "link":"/html/examples/mechanic.html",
+        "price":"$499.99",
     },
     {
-        "name":"Car Dealership",
+        "name":"Product 4",
         "image":"/images/examples/webnotfound.jpg",
         "link":"/html/examples/dealership.html",
+        "price":"$499.99",
     },
     {
-        "name":"Custom Website",
+        "name":"Product 5",
         "image":"/images/examples/webnotfound.jpg",
         "link":"/html/examples/custom.html",
+        "price":"$499.99",
     },
 ];
 
