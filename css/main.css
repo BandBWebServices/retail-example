@@ -67,6 +67,8 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-color: #010326;
+        display: flex;
+        justify-content: center;
     }
   
     .navmobile {
@@ -253,6 +255,7 @@
     #maindiv {
         width: 100%;
         text-align: center;
+        display: flex;
     }
     
   }
