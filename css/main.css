@@ -63,6 +63,8 @@
     }
 
     body {
+        background-image: url("/images/other/hero.jpg");
+        background-repeat: no-repeat;
         background-color: #010326;
     }
   
@@ -230,10 +232,9 @@
     }
 
     #hero {
-        object-fit: cover;
-        width: 100%;
-        height: 75vh;
-        z-index: -1;
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
     }
 
     #mainphone {
