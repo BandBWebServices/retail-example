@@ -9,18 +9,53 @@
   </head>
   <body>
 
-    <nav>
-      
-    </nav>
+    <header>
 
-    <main>
+      <!-- Desktop Navigation -->
+      <nav id="navdesktop" class="navdesktop">
+        <ul class="navuldesktop">
+          <a class="navadesktop" href="#"><li class="navlidesktop">The Cool Phone Co.</li></a>
+          <a class="navadesktop" href="#"><li class="navlidesktop">Products</li></a>
+          <a class="navadesktop" href="#"><li class="navlidesktop">Support</li></a>
+          <a class="navadesktop" href="#"><li class="navlidesktop">Privacy Policy</li></a>
+        </ul>
+      </nav>
+
+
+      <!-- Mobile Navigation -->
+      <nav id="navmobile" class="navmobile">
+        
+        <div class="navdivbtnmobile">
+        <button id="ham" onclick="hamburger()"><img id="iconimg" src="/images/icons/ham.png" /></button>
+        <a class="navamobilelogo" href="#">The Cool Phone Co.</a>
+        </div>
+
+        <div id="navdivmobile" class="navdivmobile">
+        <ul id="navulmobile" class="navulmobile">
+          <a class="navamobile" href="#">Products</a>
+          <a class="navamobile" href="#">Supprt</a>
+          <a class="navamobile" href="#">Privacy Policy</a>
+        </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+     
+      
+      <img id="hero" src="/images/other/hero.jpg" />
+
+      <div class="maindiv">
+        <img id="mainphone" src="/images/other/phone.png" />
+      </div>
+
+      <p>Buy our new phone</p>
       
     </main>
 
     <footer>
       
     </footer>
-
 
     
 	<script src="/js/main.js"></script>
