@@ -240,6 +240,8 @@
 
     #mainphone {
         /* position: fixed; */
+        display: flex;
+        justify-content: center;
         text-align: center;
         z-index: -1;
         width: 25vh;
