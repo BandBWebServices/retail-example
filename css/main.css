@@ -249,6 +249,11 @@
         z-index: -1;
         width: 25vh;
     }
+
+    #maindiv {
+        width: 100%;
+        text-align: center;
+    }
     
   }
   
