@@ -281,6 +281,10 @@
       width: 100%;
     }
 
+    .logo {
+        width: 32px;
+    }
+
     body {
         background-color: #010326;
     }
