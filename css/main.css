@@ -2,424 +2,504 @@
 
 @keyframes nava {
 
-    0% {
-      color: #ffffff;
-    }
-  
-    100% {
-      color: #F263E9;
-    }
-  
+  0% {
+    color: #ffffff;
   }
-  
-  
-  @keyframes navulmobile {
-  
-    0% {
-      transform: translateX(100%)
-    }
-  
-    100% {
-      transform: translateX(0%);
-    }
-  
-  }
-  
-  @keyframes navulmobileexit {
-  
-    0% {
-      transform: translateX(0%)
-    }
-  
-    100% {
-      transform: translateX(100%);
-    }
-  
-  }
-  
-  @keyframes boxshadow {
-  
-    0% {
-      box-shadow: 5px 5px 5px grey;
-    }
-  
-    100% {
-      box-shadow: 0px 0px 5px grey;
-    }
-  
-  }
-  
-  
-  
-  
-  /* Mobile */
-  
-  @media only screen and (max-width: 600px) {
-  
-    * {
-      margin: 0px;
-      padding: 0px;
-      overflow-x:hidden
-    }
 
-    body {
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-color: #010326;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
+  100% {
+    color: #F263E9;
+  }
+
+}
+
+
+@keyframes navulmobile {
+
+  0% {
+    transform: translateX(100%)
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+
+}
+
+@keyframes navulmobileexit {
+
+  0% {
+    transform: translateX(0%)
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+
+}
+
+@keyframes boxshadow {
+
+  0% {
+    box-shadow: 5px 5px 5px grey;
+  }
+
+  100% {
+    box-shadow: 0px 0px 5px grey;
+  }
+
+}
+
+
+
+
+/* Mobile */
+
+@media only screen and (max-width: 600px) {
+
+  * {
+    margin: 0px;
+    padding: 0px;
+    overflow-x:hidden
+  }
+
+  body {
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-color: #010326;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      text-align: center;
+  }
+
+  .navmobile {
+    /* background-color: grey; */
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+  }
+
+  .navdivbtnmobile {
+    background-color: #07288C;
+    height: 5vh;
+    padding-bottom: 2vh;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .navulmobile {
+    display: flex;
+    flex-direction: column;
+    /* background-color: grey; */
+    /* transform: translateX(100%); */
+  }
+
+  .navdivmobile {
+    background-color: rgba(7, 40, 140, 1);
+    transform: translateX(100%);
+  }
+
+  /* .navulmobileadded {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    animation: navulmobile 2s forwards;
+  } */
+
+  .navdivmobileadded {
+    animation: navulmobile 1.5s forwards;
+    background-color: rgba(7, 40, 140, 1);
+  }
+
+  /* .navulmobileexit {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    animation: navulmobileexit 2s forwards;
+  } */
+
+  .navdivmobileexit {
+    animation: navulmobileexit 1.5s forwards;
+    background-color: rgba(7, 40, 140, 1);
+  }
+
+  .navamobile {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1vh;
+  }
+
+  #main {
+    margin-top: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .maindiv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+  }
+
+  .maindivcon {
+    text-align: center;
+  }
+
+  .navamobilelogo {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1vh;
+    text-align: right;
+  }
+
+  .navdesktop {
+    visibility: hidden;
+    margin: 0px;
+    padding: 0px;
+    width: 0px;
+    height: 0px;
+  }
+
+  .navadesktop {
+    visibility: hidden;
+    margin: 0px;
+    padding: 0px;
+    width: 0px;
+    height: 0px;
+  }
+
+  .navlidesktop {
+    visibility: hidden;
+    margin: 0px;
+    padding: 0px;
+    width: 0px;
+    height: 0px;
+  }
+
+  #ham {
+    background: none;
+    border: none;
+    text-align: right;
+    display: flex;
+    justify-content: right;
+    /* margin: 1vh; */
+  }
+
+  #iconimg {
+    width: 20px;
+    height: 20px;
+    padding: 2vh;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    justify-tracks: center;
+    text-align-last: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 5vh;
+  }
+
+  .examplesimages {
+    /* height: 100px; */
+    display: flex;
+    justify-content: center;
+    /* padding-left: 2.5vh; */
+  }
+
+  .webDiv {
+    /* border: 2px solid black; */
+    /* margin: 5vh; */
+    /* width: 35vh; */
+    /* height: 45vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .namep {
+    text-align: center;
+  }
+
+  .alink {
+    border: 2px solid black;
+    margin: 5vh;
+    width: 35vh;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+  }
+
   
-    .navmobile {
-      /* background-color: grey; */
-      z-index: 1;
+
+  .webDivprice {
+    border: 2px solid black;
+    margin: 5vh;
+    width: 35vh;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    box-shadow: 5px 5px 5px grey;
+    /* font-size: 5rem; */
+  }
+
+  #hero {
+      visibility: hidden;
+      height: 0px;
+      width: 0px;
+  }
+
+  #mainphone {
+      /* position: fixed; */
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      z-index: -1;
+      width: 25vh;
+  }
+
+  #maindiv {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .itemphoto {
+    width: 100px;
+  }
+
+  .itemphotodiv {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+
+  /* .container {
+    display: flex;
+    justify-content: center;
+    margin: 5vh;
+    width: 5px;
+    overflow-x: hidden;
+    height: 4px;
+    padding-bottom: 40vh; 
+  }  */
+  
+}
+
+
+
+
+/* Desktop */
+
+@media only screen and (min-width: 601px) {
+
+  * {
+    margin: 0px;
+    padding: 0px;
+    overflow-x:hidden
+  }
+
+  .navdesktop {
+    background-color: #07288C;
+    position: fixed;
+    width: 100%;
+  }
+
+  body {
+      background-color: #010326;
+  }
+
+  .navuldesktop {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navadesktop {
+    text-decoration: none;
+    padding: 2.5vh;
+    margin: 2.5vh;
+  }
+
+  .navlidesktop:hover {
+      animation: nava 0.5s forwards;
+  }
+
+  .navlidesktop {
+    color: #ffffff;
+  }
+
+  .navlidesktop {
+    list-style-type: none;
+  }
+
+  .navmobile {
+    visibility: hidden;
+    margin: 0px;
+    padding: 0px;
+    width: 0px;
+    height: 0px;
+  }
+
+  .navamobile {
+    visibility: hidden;
+    margin: 0px;
+    padding: 0px;
+    width: 0px;
+    height: 0px;
+  }
+
+  .navlimobile {
+    visibility: hidden;
+    margin: 0px;
+    padding: 0px;
+    width: 0px;
+    height: 0px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    margin: 5vh;
+    width: 500px;
+    overflow-x: hidden;
+    height: 400px;
+    /* padding-bottom: 40vh; */
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .examplesimages {
+    /* height: 100px; */
+    display: flex;
+    justify-content: center;
+    /* padding-left: 2.5vh; */
+  }
+
+  .webDiv {
+    border: 2px solid black;
+    margin: 5vh;
+    width: 35vh;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    box-shadow: 5px 5px 5px grey;
+  }
+
+  .namep {
+    text-align: center;
+    margin-top: 0px;
+  }
+
+  .alink {
+    /* border: 2px solid black;
+    margin: 5vh;
+    width: 35vh;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    box-shadow: 5px 5px 5px grey; */
+  }
+
+  .alink:hover {
+    animation: boxshadow 0.5s forwards;
+  }
+
+  .pricep {
+    
+  }
+
+  .itemphoto {
+    width: 100px;
+  }
+
+  .itemphotodiv {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+
+  .webDivprice {
+    /* border: 2px solid black;
+    margin: 5vh;
+    width: 35vh;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    box-shadow: 5px 5px 5px grey;
+    background-color: white;
+    font-size: 5rem; */
+  }
+
+  #hero {
+      object-fit: cover;
+      width: 100%;
+      height: 75vh;
       position: absolute;
-      width: 100%;
-    }
-  
-    .navdivbtnmobile {
-      background-color: #07288C;
-      height: 5vh;
-      padding-bottom: 2vh;
-      display: flex;
-      flex-direction: row-reverse;
-    }
-  
-    .navulmobile {
-      display: flex;
-      flex-direction: column;
-      /* background-color: grey; */
-      /* transform: translateX(100%); */
-    }
-  
-    .navdivmobile {
-      background-color: rgba(7, 40, 140, 1);
-      transform: translateX(100%);
-    }
-  
-    /* .navulmobileadded {
-      display: flex;
-      flex-direction: column;
-      background-color: grey;
-      animation: navulmobile 2s forwards;
-    } */
-  
-    .navdivmobileadded {
-      animation: navulmobile 1.5s forwards;
-      background-color: rgba(7, 40, 140, 1);
-    }
-  
-    /* .navulmobileexit {
-      display: flex;
-      flex-direction: column;
-      background-color: grey;
-      animation: navulmobileexit 2s forwards;
-    } */
-  
-    .navdivmobileexit {
-      animation: navulmobileexit 1.5s forwards;
-      background-color: rgba(7, 40, 140, 1);
-    }
-  
-    .navamobile {
-      text-decoration: none;
-      color: #ffffff;
-      padding: 1vh;
-    }
-  
-    #main {
-      margin-top: 75px;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-    }
-  
-    .navamobilelogo {
-      text-decoration: none;
-      color: #ffffff;
-/*       padding: 1vh; */
-      text-align: right;
-    }
-  
-    .navdesktop {
-      visibility: hidden;
-      margin: 0px;
-      padding: 0px;
-      width: 0px;
-      height: 0px;
-    }
-  
-    .navadesktop {
-      visibility: hidden;
-      margin: 0px;
-      padding: 0px;
-      width: 0px;
-      height: 0px;
-    }
-  
-    .navlidesktop {
-      visibility: hidden;
-      margin: 0px;
-      padding: 0px;
-      width: 0px;
-      height: 0px;
-    }
-  
-    #ham {
-      background: none;
-      border: none;
-      text-align: right;
-      display: flex;
-      justify-content: right;
-      /* margin: 1vh; */
-    }
-  
-    #iconimg {
-      width: 20px;
-      height: 20px;
-      padding: 2vh;
-    }
-  
-    #container {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-    }
-  
-    .examplesimages {
-      /* height: 100px; */
-      display: flex;
-      justify-content: center;
-      /* padding-left: 2.5vh; */
-    }
-  
-    .webDiv {
-      /* border: 2px solid black; */
-      /* margin: 5vh; */
-      /* width: 35vh; */
-      /* height: 45vh; */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      background-color: white;
-    }
-  
-    .namep {
-      text-align: center;
-    }
-  
-    .alink {
-      border: 2px solid black;
-      margin: 5vh;
-      width: 35vh;
-      height: 45vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-decoration: none;
-      color: black;
-      background-color: white;
-    }
-  
-    
-  
-    .webDivprice {
-      border: 2px solid black;
-      margin: 5vh;
-      width: 35vh;
-      height: 45vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-decoration: none;
-      text-align: center;
-      color: black;
-      box-shadow: 5px 5px 5px grey;
-      /* font-size: 5rem; */
-    }
-
-    #hero {
-        visibility: hidden;
-        height: 0px;
-        width: 0px;
-    }
-
-    #mainphone {
-        /* position: fixed; */
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        z-index: -1;
-        width: 25vh;
-    }
-
-    #maindiv {
-        width: 100%;
-        text-align: center;
-        display: flex;
-    }
-    
+      z-index: -1;
   }
-  
-  
-  
-  
-  /* Desktop */
-  
-  @media only screen and (min-width: 601px) {
-  
-    * {
-      margin: 0px;
-      padding: 0px;
-      overflow-x:hidden
-    }
-  
-    .navdesktop {
-      background-color: #07288C;
-      position: fixed;
-      width: 100%;
-    }
 
-    .logo {
-        width: 32px;
-    }
+  #mainphone {
+      /* position: fixed; */
+      text-align: center;
+      z-index: -1;
+      width: 50vh;
+  }
 
-    body {
-        background-color: #010326;
-    }
-  
-    .navuldesktop {
+  #main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20vh;
+  }
+
+  p {
+      color: black;
+      text-align: center;
+  }
+
+  .maindiv {
+      text-align: center;
       display: flex;
       flex-direction: row;
-    }
-  
-    .navadesktop {
-      text-decoration: none;
-      padding: 2.5vh;
-      margin: 2.5vh;
-    }
-  
-    .navlidesktop:hover {
-        animation: nava 0.5s forwards;
-    }
-  
-    .navlidesktop {
-      color: #ffffff;
-    }
-  
-    .navlidesktop {
-      list-style-type: none;
-    }
-  
-    .navmobile {
-      visibility: hidden;
-      margin: 0px;
-      padding: 0px;
-      width: 0px;
-      height: 0px;
-    }
-  
-    .navamobile {
-      visibility: hidden;
-      margin: 0px;
-      padding: 0px;
-      width: 0px;
-      height: 0px;
-    }
-  
-    .navlimobile {
-      visibility: hidden;
-      margin: 0px;
-      padding: 0px;
-      width: 0px;
-      height: 0px;
-    }
-  
-    #container {
-      display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-    }
-  
-    .examplesimages {
-      /* height: 100px; */
-      display: flex;
-      justify-content: center;
-      /* padding-left: 2.5vh; */
-    }
-  
-    .webDiv {
-      /* border: 2px solid black; */
-      /* margin: 5vh; */
-      /* width: 35vh; */
-      /* height: 45vh; */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-  
-    .namep {
-      text-align: center;
-    }
-  
-    .alink {
-      border: 2px solid black;
-      margin: 5vh;
-      width: 35vh;
-      height: 45vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-decoration: none;
-      color: black;
-      box-shadow: 5px 5px 5px grey;
-    }
-  
-    .alink:hover {
-      animation: boxshadow 0.5s forwards;
-    }
-  
-    .pricep {
-      
-    }
-  
-    .webDivprice {
-      border: 2px solid black;
-      margin: 5vh;
-      width: 35vh;
-      height: 45vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-decoration: none;
-      text-align: center;
-      color: black;
-      box-shadow: 5px 5px 5px grey;
-      /* font-size: 5rem; */
-    }
-
-    #hero {
-        object-fit: cover;
-        width: 100%;
-        height: 75vh;
-        position: absolute;
-        z-index: -1;
-    }
-
-    #mainphone {
-        /* position: fixed; */
-        text-align: center;
-        z-index: -1;
-        width: 50vh;
-    }
-
-    p {
-        color: white;
-        text-align: center;
-    }
-
-    .maindiv {
-        text-align: center;
-    }
-    
   }
+  
+}
